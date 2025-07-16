@@ -5,12 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abdul Nazeer | QA Automation Engineer</title>
   <script src="https://cdn.tailwindcss.com" defer></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e3a8a',   // Blue-800
+            secondary: '#3b82f6', // Blue-500
+            accent: '#facc15',    // Yellow-400
+            light: '#f1f5f9',     // Gray-100
+            dark: '#1f2937'       // Gray-800
+          },
+          fontFamily: {
+            body: ['Inter', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
 </head>
-
-<body class="bg-gray-100 text-gray-800">
-  <header class="bg-blue-800 text-white p-6 shadow-md">
+<body class="bg-light text-dark font-body">
+  <header class="bg-primary text-white p-6 shadow-md">
     <div class="max-w-5xl mx-auto">
-      <h1 class="text-3xl font-bold">Abdul Nazeer S</h1>
+      <h1 class="text-3xl font-heading font-bold">Abdul Nazeer S</h1>
       <p class="text-sm mt-1">QA Automation Engineer | Selenium & Java Specialist</p>
     </div>
   </header>
@@ -18,7 +36,7 @@
   <main class="max-w-5xl mx-auto px-6 py-10">
     <!-- About -->
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+      <h2 class="text-2xl font-semibold mb-4 text-primary">About Me</h2>
       <p>
         I am a dedicated QA Automation Engineer with 3 years of experience in manual and automation testing. I specialize in Selenium with Java and have a proven track record of executing end-to-end test life cycles, identifying critical defects, and working in Agile environments. I enjoy collaborating with teams to deliver high-quality software and improve customer satisfaction.
       </p>
@@ -26,26 +44,26 @@
 
     <!-- Skills -->
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+      <h2 class="text-2xl font-semibold mb-4 text-primary">Skills</h2>
       <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        <span class="bg-white p-2 rounded shadow">Manual Testing</span>
-        <span class="bg-white p-2 rounded shadow">Web Automation</span>
-        <span class="bg-white p-2 rounded shadow">Java</span>
-        <span class="bg-white p-2 rounded shadow">Selenium</span>
-        <span class="bg-white p-2 rounded shadow">Cypress</span>
-        <span class="bg-white p-2 rounded shadow">Cucumber</span>
-        <span class="bg-white p-2 rounded shadow">Agile & Scrum</span>
-        <span class="bg-white p-2 rounded shadow">Jenkins</span>
-        <span class="bg-white p-2 rounded shadow">Git</span>
-        <span class="bg-white p-2 rounded shadow">SQL</span>
+        <span class="bg-white p-2 rounded shadow text-dark">Manual Testing</span>
+        <span class="bg-white p-2 rounded shadow text-dark">Web Automation</span>
+        <span class="bg-white p-2 rounded shadow text-dark">Java</span>
+        <span class="bg-white p-2 rounded shadow text-dark">Selenium</span>
+        <span class="bg-white p-2 rounded shadow text-dark">Cypress</span>
+        <span class="bg-white p-2 rounded shadow text-dark">Cucumber</span>
+        <span class="bg-white p-2 rounded shadow text-dark">Agile & Scrum</span>
+        <span class="bg-white p-2 rounded shadow text-dark">Jenkins</span>
+        <span class="bg-white p-2 rounded shadow text-dark">Git</span>
+        <span class="bg-white p-2 rounded shadow text-dark">SQL</span>
       </div>
     </section>
 
     <!-- Experience -->
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Work Experience</h2>
+      <h2 class="text-2xl font-semibold mb-4 text-primary">Work Experience</h2>
       <div class="bg-white p-4 rounded shadow">
-        <h3 class="text-xl font-semibold">System Engineer - TCS</h3>
+        <h3 class="text-xl font-semibold text-secondary">System Engineer - TCS</h3>
         <p class="text-sm text-gray-600">Apr 2021 – Jan 2024 | Chennai, Tamil Nadu</p>
         <ul class="list-disc list-inside mt-2">
           <li>Analyzed CSAT & VOC reports and provided final reports to clients.</li>
@@ -61,7 +79,7 @@
 
     <!-- Certification -->
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Certification</h2>
+      <h2 class="text-2xl font-semibold mb-4 text-primary">Certification</h2>
       <p class="bg-white p-4 rounded shadow">
         <strong>Java Automation Testing</strong> – Guvi Geek<br>
         March 2025 – May 2025
@@ -70,7 +88,7 @@
 
     <!-- Education -->
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Education</h2>
+      <h2 class="text-2xl font-semibold mb-4 text-primary">Education</h2>
       <div class="bg-white p-4 rounded shadow mb-4">
         <strong>B.E. Aeronautical</strong><br />
         Nehru Institute of Engineering & Technology – 6.9 CGPA (2020)
@@ -83,11 +101,11 @@
 
     <!-- Projects -->
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+      <h2 class="text-2xl font-semibold mb-4 text-primary">Projects</h2>
 
       <!-- Project 1 -->
       <div class="bg-white p-4 rounded shadow mb-4">
-        <h3 class="text-xl font-bold text-blue-700">ParaBank Automation</h3>
+        <h3 class="text-xl font-bold text-secondary">ParaBank Automation</h3>
         <p>Automated functional testing for ParaBank banking web app using Selenium, Java, TestNG, and Page Object Model. Included account creation, login, fund transfer, and loan request modules.</p>
         <p class="text-sm mt-2"><strong>Tools:</strong> Selenium, Java, TestNG, Maven, ExtentReports</p>
         <a href="https://github.com/yourusername/parabank-automation" target="_blank" class="text-blue-600">View on GitHub</a>
@@ -95,7 +113,7 @@
 
       <!-- Project 2 -->
       <div class="bg-white p-4 rounded shadow mb-4">
-        <h3 class="text-xl font-bold text-blue-700">E-Commerce Site Test Suite</h3>
+        <h3 class="text-xl font-bold text-secondary">E-Commerce Site Test Suite</h3>
         <p>Designed a robust regression test suite for an e-commerce platform including login, product search, cart, checkout and order confirmation modules. Used reusable POM-based framework.</p>
         <p class="text-sm mt-2"><strong>Tools:</strong> Selenium, Java, TestNG, Maven, Jenkins</p>
         <a href="https://github.com/yourusername/ecommerce-selenium-suite" target="_blank" class="text-blue-600">View on GitHub</a>
@@ -103,7 +121,7 @@
 
       <!-- Project 3 -->
       <div class="bg-white p-4 rounded shadow">
-        <h3 class="text-xl font-bold text-blue-700">Cypress UI Regression Suite</h3>
+        <h3 class="text-xl font-bold text-secondary">Cypress UI Regression Suite</h3>
         <p>Developed Cypress-based UI tests for a React web application to validate cross-browser UI consistency and functionality. Integrated with CI/CD for nightly runs.</p>
         <p class="text-sm mt-2"><strong>Tools:</strong> Cypress, JavaScript, Mocha, GitHub Actions</p>
         <a href="https://github.com/yourusername/cypress-ui-suite" target="_blank" class="text-blue-600">View on GitHub</a>
@@ -112,7 +130,7 @@
 
     <!-- Contact -->
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+      <h2 class="text-2xl font-semibold mb-4 text-primary">Contact</h2>
       <div class="bg-white p-4 rounded shadow">
         <p><strong>Phone:</strong> 86681 73364</p>
         <p><strong>Email:</strong> <a href="mailto:nazeersyed10@gmail.com" class="text-blue-600">nazeersyed10@gmail.com</a></p>
@@ -121,7 +139,7 @@
     </section>
   </main>
 
-  <footer class="bg-blue-800 text-white text-center p-4">
+  <footer class="bg-primary text-white text-center p-4">
     © 2025 Abdul Nazeer | QA Automation Portfolio
   </footer>
 </body>
