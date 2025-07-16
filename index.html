@@ -4,17 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abdul Nazeer | QA Automation Engineer</title>
-  <script src="https://cdn.tailwindcss.com" defer></script>
+  <link rel="icon" href="your-photo.jpg" />
+  <meta name="description" content="Abdul Nazeer - QA Automation Engineer portfolio showcasing skills, experience, and projects in Selenium, Java, and Cypress.">
+  <meta name="author" content="Abdul Nazeer" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
+      darkMode: 'class',
       theme: {
         extend: {
           colors: {
-            primary: '#1e3a8a',   // Blue-800
-            secondary: '#3b82f6', // Blue-500
-            accent: '#facc15',    // Yellow-400
-            light: '#f1f5f9',     // Gray-100
-            dark: '#1f2937'       // Gray-800
+            primary: '#1e3a8a',
+            secondary: '#3b82f6',
+            accent: '#facc15',
+            light: '#f1f5f9',
+            dark: '#1f2937'
           },
           fontFamily: {
             body: ['Inter', 'sans-serif'],
@@ -25,9 +30,19 @@
     }
   </script>
 </head>
-<body class="bg-light text-dark font-body">
+<body class="bg-gradient-to-br from-blue-50 via-white to-blue-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-dark font-body dark:text-white transition-colors duration-300">
+
+  <!-- Dark Mode Toggle -->
+  <div class="fixed top-4 right-4 z-50">
+    <button onclick="document.documentElement.classList.toggle('dark')" class="bg-secondary text-white px-4 py-1 rounded shadow hover:bg-accent transition">
+      Toggle Mode
+    </button>
+  </div>
+
+  <!-- Header -->
   <header class="bg-primary text-white p-6 shadow-md">
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-5xl mx-auto text-center">
+      <img src="your-photo.jpg" alt="Abdul Nazeer" class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-white shadow-md" />
       <h1 class="text-3xl font-heading font-bold">Abdul Nazeer S</h1>
       <p class="text-sm mt-1">QA Automation Engineer | Selenium & Java Specialist</p>
     </div>
@@ -38,7 +53,7 @@
     <section class="mb-12">
       <h2 class="text-2xl font-semibold mb-4 text-primary">About Me</h2>
       <p>
-        I am a dedicated QA Automation Engineer with 3 years of experience in manual and automation testing. I specialize in Selenium with Java and have a proven track record of executing end-to-end test life cycles, identifying critical defects, and working in Agile environments. I enjoy collaborating with teams to deliver high-quality software and improve customer satisfaction.
+        I am a dedicated QA Automation Engineer with 3 years of experience in manual and automation testing. I specialize in Selenium with Java and have a proven track record of executing end-to-end test life cycles, identifying critical defects, and working in Agile environments.
       </p>
     </section>
 
@@ -46,33 +61,30 @@
     <section class="mb-12">
       <h2 class="text-2xl font-semibold mb-4 text-primary">Skills</h2>
       <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        <span class="bg-white p-2 rounded shadow text-dark">Manual Testing</span>
-        <span class="bg-white p-2 rounded shadow text-dark">Web Automation</span>
-        <span class="bg-white p-2 rounded shadow text-dark">Java</span>
-        <span class="bg-white p-2 rounded shadow text-dark">Selenium</span>
-        <span class="bg-white p-2 rounded shadow text-dark">Cypress</span>
-        <span class="bg-white p-2 rounded shadow text-dark">Cucumber</span>
-        <span class="bg-white p-2 rounded shadow text-dark">Agile & Scrum</span>
-        <span class="bg-white p-2 rounded shadow text-dark">Jenkins</span>
-        <span class="bg-white p-2 rounded shadow text-dark">Git</span>
-        <span class="bg-white p-2 rounded shadow text-dark">SQL</span>
+        <span class="bg-white p-2 rounded shadow text-dark hover:bg-accent hover:text-white transition duration-300">Manual Testing</span>
+        <span class="bg-white p-2 rounded shadow text-dark hover:bg-accent hover:text-white transition duration-300">Web Automation</span>
+        <span class="bg-white p-2 rounded shadow text-dark hover:bg-accent hover:text-white transition duration-300">Java</span>
+        <span class="bg-white p-2 rounded shadow text-dark hover:bg-accent hover:text-white transition duration-300">Selenium</span>
+        <span class="bg-white p-2 rounded shadow text-dark hover:bg-accent hover:text-white transition duration-300">Cypress</span>
+        <span class="bg-white p-2 rounded shadow text-dark hover:bg-accent hover:text-white transition duration-300">Cucumber</span>
+        <span class="bg-white p-2 rounded shadow text-dark hover:bg-accent hover:text-white transition duration-300">Agile & Scrum</span>
+        <span class="bg-white p-2 rounded shadow text-dark hover:bg-accent hover:text-white transition duration-300">Jenkins</span>
+        <span class="bg-white p-2 rounded shadow text-dark hover:bg-accent hover:text-white transition duration-300">Git</span>
+        <span class="bg-white p-2 rounded shadow text-dark hover:bg-accent hover:text-white transition duration-300">SQL</span>
       </div>
     </section>
 
     <!-- Experience -->
     <section class="mb-12">
       <h2 class="text-2xl font-semibold mb-4 text-primary">Work Experience</h2>
-      <div class="bg-white p-4 rounded shadow">
+      <div class="bg-white p-4 rounded shadow dark:bg-gray-800">
         <h3 class="text-xl font-semibold text-secondary">System Engineer - TCS</h3>
-        <p class="text-sm text-gray-600">Apr 2021 – Jan 2024 | Chennai, Tamil Nadu</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300">Apr 2021 – Jan 2024 | Chennai, Tamil Nadu</p>
         <ul class="list-disc list-inside mt-2">
-          <li>Analyzed CSAT & VOC reports and provided final reports to clients.</li>
-          <li>Created and executed test cases across browsers.</li>
           <li>Automated UI and functional tests using Selenium & Java.</li>
-          <li>Maintained scripts for regression, smoke, and end-to-end testing.</li>
-          <li>Used TestNG, Maven for structured execution & reporting.</li>
-          <li>Designed reusable test data and Page Object Model.</li>
-          <li>Logged bugs in JIRA and worked with developers for resolution.</li>
+          <li>Maintained regression, smoke, and E2E test scripts.</li>
+          <li>Used TestNG, Maven, and POM for test architecture.</li>
+          <li>Tracked bugs in JIRA and collaborated with developers.</li>
         </ul>
       </div>
     </section>
@@ -80,7 +92,7 @@
     <!-- Certification -->
     <section class="mb-12">
       <h2 class="text-2xl font-semibold mb-4 text-primary">Certification</h2>
-      <p class="bg-white p-4 rounded shadow">
+      <p class="bg-white p-4 rounded shadow dark:bg-gray-800">
         <strong>Java Automation Testing</strong> – Guvi Geek<br>
         March 2025 – May 2025
       </p>
@@ -89,11 +101,11 @@
     <!-- Education -->
     <section class="mb-12">
       <h2 class="text-2xl font-semibold mb-4 text-primary">Education</h2>
-      <div class="bg-white p-4 rounded shadow mb-4">
+      <div class="bg-white p-4 rounded shadow mb-4 dark:bg-gray-800">
         <strong>B.E. Aeronautical</strong><br />
         Nehru Institute of Engineering & Technology – 6.9 CGPA (2020)
       </div>
-      <div class="bg-white p-4 rounded shadow">
+      <div class="bg-white p-4 rounded shadow dark:bg-gray-800">
         <strong>HSC – Computer Science</strong><br />
         R.G. Matriculation Hr. Sec. School – 81% (2016)
       </div>
@@ -104,34 +116,34 @@
       <h2 class="text-2xl font-semibold mb-4 text-primary">Projects</h2>
 
       <!-- Project 1 -->
-      <div class="bg-white p-4 rounded shadow mb-4">
+      <div class="bg-white p-4 rounded shadow mb-4 dark:bg-gray-800">
         <h3 class="text-xl font-bold text-secondary">ParaBank Automation Test Suite</h3>
-        <p>Automated functional testing for ParaBank banking web app using Selenium, Java, TestNG, and Page Object Model. Included account creation, login, fund transfer, and loan request modules.</p>
+        <p>Wrote Automation test scripts for ParaBank banking app using Selenium, Java, TestNG, and POM, covers all user journey.</p>
         <p class="text-sm mt-2"><strong>Tools:</strong> Selenium, Java, TestNG, Maven, ExtentReports</p>
-        <a href="https://github.com/AbdulTest-12/Guvi-Main-Project.git" target="_blank" class="text-blue-600">View on GitHub</a>
+        <a href="https://github.com/AbdulTest-12/Guvi-Main-Project.git" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
       </div>
 
       <!-- Project 2 -->
-      <div class="bg-white p-4 rounded shadow mb-4">
-        <h3 class="text-xl font-bold text-secondary">E-Commerce Site Aujtomation Test Suite</h3>
-        <p>Designed a robust regression test suite for an e-commerce platform including login, product search, cart, checkout and order confirmation modules. Used reusable POM-based framework.</p>
+      <div class="bg-white p-4 rounded shadow mb-4 dark:bg-gray-800">
+        <h3 class="text-xl font-bold text-secondary">E-Commerce Site Automation Test Suite</h3>
+        <p>Wrote the Automation test scripts for an e-commerce site using Selenium and Java, TestNG, POM which covers full user journey.</p>
         <p class="text-sm mt-2"><strong>Tools:</strong> Selenium, Java, TestNG, Maven, Jenkins</p>
-        <a href="https://github.com/AbdulTest-12/Guvi-MP2.git" target="_blank" class="text-blue-600">View on GitHub</a>
+        <a href="https://github.com/AbdulTest-12/Guvi-MP2.git" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
       </div>
 
       <!-- Project 3 -->
-      <div class="bg-white p-4 rounded shadow">
+      <div class="bg-white p-4 rounded shadow dark:bg-gray-800">
         <h3 class="text-xl font-bold text-secondary">Contact List Automation Test Suite</h3>
-        <p>Automated functional testing for Contact list web app using Selenium, Java, TestNG, and Page Object Model. Included account creation, login, edit contact, and delete contact modules</p>
+        <p>Wrote the Autuomation test script for a contact list application using Selenium,  Java ,TestNG and POM which cover all user journey</p>
         <p class="text-sm mt-2"><strong>Tools:</strong> Selenium, Java, TestNG, Maven, Jenkins</p>
-        <a href="https://github.com/AbdulTest-12/Guvi-MP1.git" target="_blank" class="text-blue-600">View on GitHub</a>
+        <a href="https://github.com/AbdulTest-12/Guvi-MP1.git" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
       </div>
     </section>
 
     <!-- Contact -->
     <section class="mb-12">
       <h2 class="text-2xl font-semibold mb-4 text-primary">Contact</h2>
-      <div class="bg-white p-4 rounded shadow">
+      <div class="bg-white p-4 rounded shadow dark:bg-gray-800">
         <p><strong>Phone:</strong> 86681 73364</p>
         <p><strong>Email:</strong> <a href="mailto:nazeersyed10@gmail.com" class="text-blue-600">nazeersyed10@gmail.com</a></p>
         <p><strong>Location:</strong> Udumalpet, Tamil Nadu, India</p>
@@ -144,3 +156,4 @@
   </footer>
 </body>
 </html>
+
